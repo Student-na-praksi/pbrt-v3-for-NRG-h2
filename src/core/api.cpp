@@ -57,6 +57,7 @@
 #include "integrators/mlt.h"
 #include "integrators/ao.h"
 #include "integrators/path.h"
+#include "my_core/simplepath.h"
 #include "integrators/sppm.h"
 #include "integrators/volpath.h"
 #include "integrators/whitted.h"
@@ -1681,6 +1682,8 @@ Integrator *RenderOptions::MakeIntegrator() const {
             CreateDirectLightingIntegrator(IntegratorParams, sampler, camera);
     else if (IntegratorName == "path")
         integrator = CreatePathIntegrator(IntegratorParams, sampler, camera);
+    else if (IntegratorName == "my_path_tracing")
+        integrator = CreateSimplePathIntegrator(IntegratorParams, sampler, camera);
     else if (IntegratorName == "volpath")
         integrator = CreateVolPathIntegrator(IntegratorParams, sampler, camera);
     else if (IntegratorName == "bdpt") {

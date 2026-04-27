@@ -3,3 +3,11 @@ src/build
 src/bin
 src/objs
 .sconsign.dblite
+*.exr
+build-vs2019 
+# Output directories - store renders but not the large files
+exr_results/*
+!exr_results/.gitkeep
+img_results/*
+!img_results/.gitkeep
+scenes/tmp_my_scene_*.pbrt

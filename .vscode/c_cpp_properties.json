@@ -1,0 +1,45 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "PBRT-V3-MSVC",
+      "compilerPath": "cl.exe",
+      "intelliSenseMode": "windows-msvc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/src/core",
+        "${workspaceFolder}/src/accelerators",
+        "${workspaceFolder}/src/cameras",
+        "${workspaceFolder}/src/filters",
+        "${workspaceFolder}/src/integrators",
+        "${workspaceFolder}/src/lights",
+        "${workspaceFolder}/src/materials",
+        "${workspaceFolder}/src/media",
+        "${workspaceFolder}/src/samplers",
+        "${workspaceFolder}/src/shapes",
+        "${workspaceFolder}/src/textures",
+        "${workspaceFolder}/src/my_core",
+        "${workspaceFolder}/src/ext",
+        "${workspaceFolder}/src/ext/glog/src",
+        "${workspaceFolder}/src/ext/openexr/OpenEXR",
+        "${workspaceFolder}/src/ext/openexr/IlmBase",
+        "${workspaceFolder}/src/ext/ptex/src",
+        "${workspaceFolder}/src/ext/zlib"
+      ],
+      "defines": [
+        "_CRT_SECURE_NO_WARNINGS",
+        "NOMINMAX"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src",
+          "${workspaceFolder}/src/core",
+          "${workspaceFolder}/src/my_core"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}
